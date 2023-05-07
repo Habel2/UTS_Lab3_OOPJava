@@ -1,4 +1,38 @@
 # UTS_Lab3_OOPJava
+
+## No 1
+
+#### a. Class
+Class adalah sebuah blueprint atau cetak biru untuk membuat objek. Class mendefinisikan karakteristik dari sebuah objek, seperti atribut dan method yang dapat digunakan untuk memanipulasi atribut tersebut.
+```java
+public class anjing {
+    //atribut
+    String jenis;
+    int berat;
+    int umur;
+
+    void start() {
+        System.out.println("Mobil dinyalakan");
+    }
+    void stop() {
+        System.out.println("Mobil dimatikan");
+    }
+}
+
+```
+
+#### b. Object
+Object adalah sebuah instance atau wujud nyata dari sebuah class. Setiap objek memiliki atribut dan method yang sudah didefinisikan di dalam class yang sama.
+
+#### c. Constructor
+Constructor merupakan suatu method yang akan memberikan nilai awal pada saat suatu objek dibuat. Pada saat program dijalankan, constructor akan langsung memberikan nilai awal pada saat perintah new, membuat suatu objek.
+
+#### d. Method Overloading
+Method overloading adalah kemampuan untuk membuat dua atau lebih method dengan nama yang sama di dalam sebuah class, namun memiliki parameter atau tipe data yang berbeda-beda. Dalam method overloading, ketika suatu method dipanggil, Java akan menentukan method yang mana yang harus dipanggil berdasarkan jumlah dan tipe data parameter yang digunakan.
+
+#### e. Method Setter dan Getter
+Method setter dan getter adalah method yang digunakan untuk mengakses dan mengubah nilai dari atribut (variabel) dalam sebuah class. Setter digunakan untuk mengubah nilai atribut, sedangkan getter digunakan untuk mengambil nilai atribut.
+
 ## No 2
 ![Screenshot (7)](https://user-images.githubusercontent.com/110342947/236661512-5c4970e5-feb8-4bf3-9f32-adf1bb6a28ff.png)
 ## No 3
