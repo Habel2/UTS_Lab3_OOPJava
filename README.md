@@ -63,18 +63,18 @@ Method overloading adalah kemampuan untuk membuat dua atau lebih method dengan n
 
 _anjing.java_
 ```java
-    void deskripsi(String jenis){
-        System.out.println("Jenis = "+ jenis);
-    }
-    void deskripsi(String jenis, int umur){
-        System.out.println("Jenis = "+ jenis);
-        System.out.println("Umur = "+ umur);
-    }
-    void deskripsi(String jenis, int umur, int berat){
-        System.out.println("Jenis = "+ jenis);
-        System.out.println("Umur = "+ umur);
-        System.out.println("Berat = "+ berat);
-    }
+void deskripsi(String jenis){
+    System.out.println("Jenis = "+ jenis);
+}
+void deskripsi(String jenis, int umur){
+    System.out.println("Jenis = "+ jenis);
+    System.out.println("Umur = "+ umur);
+}
+void deskripsi(String jenis, int umur, int berat){
+    System.out.println("Jenis = "+ jenis);
+    System.out.println("Umur = "+ umur);
+    System.out.println("Berat = "+ berat);
+}
 ```
 _main.java_
 ```java
