@@ -5,9 +5,9 @@
 #### a. Class
 Class adalah sebuah blueprint atau cetak biru untuk membuat objek. Class mendefinisikan karakteristik dari sebuah objek, seperti atribut dan method yang dapat digunakan untuk memanipulasi atribut tersebut.
 
-_anjing.java_
+_Anjing.java_
 ```java
-public class anjing {
+public class Anjing {
     //atribut
     String jenis;
     int berat;
@@ -27,9 +27,9 @@ public class anjing {
 #### b. Object
 Object adalah sebuah instance atau wujud nyata dari sebuah class. Setiap objek memiliki atribut dan method yang sudah didefinisikan di dalam class yang sama.
 
-_main.java_
+_Main.java_
 ```java
-anjing anjing1 = new anjing();
+Anjing anjing1 = new Anjing();
 anjing1.jenis = "Rotweiller";
 anjing1.berat = 45;
 anjing1.umur = 6;
@@ -39,29 +39,29 @@ anjing1.bark();
 #### c. Constructor
 Constructor merupakan suatu method yang akan memberikan nilai awal pada saat suatu objek dibuat. Pada saat program dijalankan, constructor akan langsung memberikan nilai awal pada saat perintah new, membuat suatu objek.
 
-_anjing.java_
+_Anjing.java_
 ```java
-public anjing(){
+public Anjing(){
     this.jenis = "Golden";
     this.berat = 40;
     this.umur = 7;
 }
 
-public anjing(String jenis, int berat, int umur){
+public Anjing(String jenis, int berat, int umur){
     this.jenis = jenis;
     this.berat = berat;
     this.umur = umur;
 }
 ```
-_main.java_
+_Main.java_
 ```java
-anjing anjing2 = new anjing();
+Anjing anjing2 = new Anjing();
 System.out.println(anjing2.jenis);
 ```
 #### d. Method Overloading
 Method overloading adalah kemampuan untuk membuat dua atau lebih method dengan nama yang sama di dalam sebuah class, namun memiliki parameter atau tipe data yang berbeda-beda. Dalam method overloading, ketika suatu method dipanggil, Java akan menentukan method yang mana yang harus dipanggil berdasarkan jumlah dan tipe data parameter yang digunakan.
 
-_anjing.java_
+_Anjing.java_
 ```java
 void deskripsi(String jenis){
     System.out.println("Jenis = "+ jenis);
@@ -76,7 +76,7 @@ void deskripsi(String jenis, int umur, int berat){
     System.out.println("Berat = "+ berat);
 }
 ```
-_main.java_
+_Main.java_
 ```java
 anjing2.deskripsi("Shiba Inu", 5, 8);
 ```
@@ -85,26 +85,26 @@ anjing2.deskripsi("Shiba Inu", 5, 8);
 Method setter dan getter adalah method yang digunakan untuk mengakses dan mengubah nilai dari atribut (variabel) dalam sebuah class. Setter digunakan untuk mengubah nilai atribut, sedangkan getter digunakan untuk mengambil nilai atribut.
 ##### Setter
 
-_anjing.java_
+_Anjing.java_
 ```java
 public void setJenis(String jenis){
     this.jenis = jenis;
 }
 ```
-_main.java_
+_Main.java_
 ```java
 anjing2.setJenis("Poodle");
-ystem.out.println(anjing2.jenis);
+system.out.println(anjing2.jenis);
 ```
 
 ##### Getter
-_anjing.java_
+_Anjing.java_
 ```java
 public String getJenis(){
     return jenis;
 }
 ```
-_main.java_
+_Main.java_
 ```java
 System.out.println(anjing1.getJenis());
 ```
