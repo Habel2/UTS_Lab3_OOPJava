@@ -1,47 +1,47 @@
 class fisika{
-    double v0;
-    double g;
+    double kecepatanAwal;
+    double Gravitasi;
 
     //Method Overloading
     public fisika (){
-        this.v0=0;
-        this.g=0;
+        this.kecepatanAwal=0;
+        this.Gravitasi=0;
     }
-    public fisika (double v0){
-        this.v0=v0;
-        this.g=10;
+    public fisika (double kecepatanAwal){
+        this.kecepatanAwal=kecepatanAwal;
+        this.Gravitasi=10;
     }
-    public fisika (double v0, double g){
-        this.v0=v0;
-        this.g=g;
+    public fisika (double kecepatanAwal, double Gravitasi){
+        this.kecepatanAwal=kecepatanAwal;
+        this.Gravitasi=Gravitasi;
     }
     //Constructor
     public double rumus(){
-        double h = (v0*v0)/(2*g);
-        return h;
+        double Ketinggian = (kecepatanAwal*kecepatanAwal)/(2*Gravitasi);
+        return Ketinggian;
     }
-    public double rumus(double v0, double g){
-        double h = (v0*v0)/(2*g);
-        return h;
+    public double rumus(double kecepatanAwal, double Gravitasi){
+        double Ketinggian = (kecepatanAwal*kecepatanAwal)/(2*Gravitasi);
+        return Ketinggian;
     }
 }
 
 class matematika{
     double phi;
-    double jari;
+    double JariJariLingkaran;
 
     public matematika(){
-        this.jari=0;
+        this.JariJariLingkaran=0;
     }
     public matematika(double jari){
-        this.jari = jari;
+        this.Jari = Jari;
     }
     public double rumus(){
-        double lp = 4*Math.PI*jari*jari;
-        return lp;
+        double LuasPermukaan = 4*Math.PI*JariJariLingkaran*JariJariLingkaran;
+        return LuasPermukaan;
     }
-    public double rumus(double jari){
-        double lp = 4*Math.PI*jari*jari;
-        return lp;
+    public double rumus(double JariJariLingkaran){
+        double LuasPermukaan = 4*Math.PI*JariJariLingkaran*JariJariLingkaran;
+        return LuasPermukaan;
     }
 }
